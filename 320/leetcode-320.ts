@@ -39,8 +39,8 @@ export function generateAbbreviations(word: string): string[] {
   const results: string[] = []; // O(n^n)
   const intermediateBlocks: string[] = [];
 
-	// Recursively explores all abbreviation combinations for the substring
-	// starting at suffixStart, building results via in-place array modifications.
+  // Recursively explores all abbreviation combinations for the substring
+  // starting at suffixStart, building results via in-place array modifications.
   const recursiveExpandFrom = (
     suffixStart: number,
     mustKeepCurrentChar: boolean  // true after abbreviation, enforces no adjacent numbers
